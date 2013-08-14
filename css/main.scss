@@ -294,6 +294,31 @@ html, body {
         line-height: 1;
         margin-bottom: 10px;
     }
+    .valign{
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+    a, a:visited{
+        color: #296bb1;
+    }
+    .blue-button, .blue-button:visited{
+        display: block;
+        background: none;
+        background-color: #296bb1;
+        padding: 10px 0;
+        text-align: center;
+        border: none;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .info{
+        color: #717171;
+        max-width: 450px;
+        padding: 10px 0;
+        line-height: 1.1;
+    }
 }
 
 /* ==========================================================================

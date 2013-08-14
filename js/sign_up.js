@@ -2,24 +2,30 @@
 (function() {
   $(function() {
     var open_step1, open_step2, open_step3;
-    $('.cancel-signup').on('click', function(e) {
+    $('.cancel-signup').on('click', function() {
       return $.fancybox.close();
     });
     open_step1 = function() {
-      return $.fancybox.open($('.signup-step1'), {
-        wrapCSS: "abaris-modal",
-        padding: 5,
+      return $.show_abaris_box('.signup-step1', {
         afterShow: function() {
-          return $('.signup-step1').find('.next-step').on('click', function() {
+          var step1;
+          step1 = $('.signup-step1');
+          step1.find(':radio').on('change', function() {
+            if ($(this).attr('id') === 'ur') {
+              step1.find('.organization').show();
+            } else {
+              step1.find('.organization').hide();
+            }
+            return $.fancybox.update();
+          });
+          return step1.find('.next-step').on('click', function() {
             return open_step2();
           });
         }
       });
     };
     open_step2 = function() {
-      return $.fancybox.open($('.signup-step2'), {
-        wrapCSS: "abaris-modal",
-        padding: 5,
+      return $.show_abaris_box('.signup-step2', {
         afterShow: function() {
           $('.signup-step2').find('.next-step').on('click', function() {
             return open_step3();
@@ -31,9 +37,7 @@
       });
     };
     open_step3 = function() {
-      return $.fancybox.open($('.signup-step3'), {
-        wrapCSS: 'abaris-modal',
-        padding: 5,
+      return $.show_abaris_box('.signup-step3', {
         afterShow: function() {
           return $('.signup-step3').find('.login-submit').on('click', function() {
             return $.fancybox.close();

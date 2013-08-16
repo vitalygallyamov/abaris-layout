@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/form.css">
         <link rel="stylesheet" href="css/order.css">
+        <link rel="stylesheet" href="css/catalog.css">
         <link rel="stylesheet" href="css/abaris-modal.css">
 
         <!--[if lt IE 9]>
@@ -98,24 +99,13 @@
             <!-- end breadcrumbs -->
 
             <!-- it will delete -->
-            <a class="open" href="#" data-target=".thanks1">Спасибо1</a>
+            <!-- <a class="open" href="#" data-target=".thanks1">Спасибо1</a>
             <a class="open" href="#" data-target=".thanks2">Спасибо2</a>
             <a class="open" href="#" data-target=".thanks3">Спасибо3</a>
-            <a class="open" href="#" data-target=".thanks4">В корзину</a>
+            <a class="open" href="#" data-target=".thanks4">В корзину</a> -->
             <!-- it will delete -->
 
             <!-- begin modal windows -->
-            <div class="inline-modal thanks1">
-                <h3>Спасибо!</h3>
-                <div class="row-fluid">
-                    <div class="span12 info">Спасибо, что оформили заказ на сайте Абарис. В личном кабинете Вы сможете тслеживать статус заказа.<br>Когда Ваш товар придет, мы Вам об этом сообщим по указанному номеру телефона и e-mail.</div>
-                </div>
-                <div class="row-fluid">
-                    <div class="span6"><a class="valign" href="#">Зарегистрироваться</a></div>
-                    <div class="span6"><a href="#" class="blue-button">Записаться на СТО</a></div>
-                </div>
-            </div>
-
             <div class="inline-modal thanks2">
                 <h3>Спасибо!</h3>
                 <div class="row-fluid">
@@ -126,96 +116,105 @@
                 </div>
                 <div class="row-fluid"><div class="span12"><a href="#" class="blue-button">Записаться на СТО</a></div></div>
             </div>
-
-             <div class="inline-modal thanks3">
-                <h3>Спасибо!</h3>
-                <div class="row-fluid">
-                    <div class="span12 info">Спасибо, что нашли время и зарегестрировались на сайте Абарис, на Ваш e-mail было отправлено письмо. Перейдите, пожалуйста по ссылке в письме для завершения регистрации.</div>
-                </div>
-                <div class="row-fluid"><div class="span12"><a href="#" class="blue-button">Пожалуйста!</a></div></div>
-            </div>
-
-            <div class="inline-modal thanks4">
-                <div class="row-fluid">
-                    <div class="span12 info">Вы положили товар в корзину, можете перейти к оформлению заказа или посмотреть другие товары</div>
-                </div>
-                <div class="row-fluid">
-                    <div class="span12"><a href="#">Посмотреть еще товары</a></div>
-                </div>
-                <div class="row-fluid"><div class="span12"><a href="#" class="blue-button">Перейти к оформлению заказа!</a></div></div>
-            </div>
             <!-- end modal windows -->
             
-            <!-- begin order steps  (step 1)-->
+            <!-- begin order steps  (step 3)-->
             <div class="container order">
                 <h2 class="georgia">Оформление заказа</h2>
                 <div>
                     <span class="blue-line"></span>
-                    <span class="steps">Шаг <span>1</span> из 3</span>
+                    <span class="steps">Шаг <span>3</span> из 3</span>
                 </div>
-                <div class="step-type georgia">Способ оплаты</div>
+                <div class="step-type georgia">Подтверждение заказа</div>
             </div>
+            <div class="order container order-step3">
+                <!-- <form class="abaris-form" action="" method="POST"> -->
+                    <div class="row">
+                        <div class="span12"><span class="black">Продавец</span>: Абарис, г Тюмень, ул. Ордженекидзе 112</div>
+                    </div>
+                    <div class="row clear">
+                        <div class="span12 black">Параметры доставки (<a href="#">изменить</a>): </div>
+                    </div>
+
+                    <div class="row clear">
+                        <div class="span2 black">Адрес:</div>
+                        <div class="span4">Абарис, г Тюмень, ул. Ордженекидзе 112</div>
+                    </div>
+                    <div class="row clear">
+                        <div class="span2 black">Получатель:</div>
+                        <div class="span4">Иванов Иван</div>
+                    </div>
+                    <div class="row clear">
+                        <div class="span2 black">Телефон: </div>
+                        <div class="span4">+7 (919) 111 111</div>
+                    </div>
+                    <div class="row">
+                        <div class="span2 black">E-mail:</div>
+                        <div class="span4">sdgfdflk@mail.ru</div>
+                    </div>
+                    <div class="row">
+                        <div class="span12 black">Состав заказа (<a href="#">изменить</a>): </div>
+                    </div>
+                <!-- </form> -->
+            </div>
+            <div class="catalog-container">
+                <div class="catalog-grid">
+                    <div class="catalog-grid-header">
+                        <div class="container">
+                            <div class="row-fluid">
+                                <div class="field span3"><div class="valign-text"></div></div>
+                                <div class="field span4"><div class="valign-text"><p>Название</p></div></div>
+                                <div class="field span2"><div class="valign-text"><p>Количество</p></div></div>
+                                <div class="field span1"><div class="valign-text"><p>Цена</p></div></div>
+                                <div class="field span1"><div class="valign-text"><p>Скидка</p></div></div>
+                                <div class="field span1"><div class="valign-text"><p>Цена со скидкой</p></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-grid-row no-hover">
+                        <div class="container">
+                            <div class="row-fluid">
+                                <div class="span3 field img"><img src="img/photo_engine.jpg" alt=""></div>
+                                <div class="span4 field left"><div class="valign-text">
+                                    <p><a href="#">Упорная пластина натяжителя цепи</a><br>производитель Hyndai<br>код: 12382340</p>
+                                </div></div>
+                                <div class="span2 field"><div class="valign-text"><p>1</p></div></div>
+                                <div class="span1 field"><div class="valign-text"><p>3 шт.</p></div></div>
+                                <div class="span1 field"><div class="valign-text"><p>14 дней</p></div></div>
+                                <div class="span1 field"><div class="valign-text"><p>4 526 руб.</p></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>     
             <div class="subtotal">
                 <div class="container">
-                    <div class="span1"><span class="georgia">790</span> Товары</div>
-                    <div class="span1"><span class="georgia">5%</span> Скидка</div>
-                    <div class="span2"><span class="georgia">7919 р.</span> Итого</div>
+                    <div class="row">
+                        <div class="span7"></div>
+                        <div class="span2"><span class="georgia">13 июня</span> Дата доставки</div>
+                        <div class="span2"><span class="georgia">7919 р.</span> Итого</div>
+                    </div>
                 </div>
             </div>
-            <div class="order container order-step1">
-                <h2 class="georgia">Выбирите способ оплаты</h2>
+            <div class="order container order-step3">
                 <form class="abaris-form" action="" method="POST">
                     <div class="row">
-                        <div class="span4">Наличные</div>
-                        <div class="span4">
-                            <input id="nal" type="radio" name="payment_type" checked class="css-checkbox">
-                            <label for="nal" name="demo_lbl_1" class="css-label">Наличный расчет</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="span4">Банковские карты</div>
-                        <div class="span4">
-                            <div class="types">
-                                <input id="visa" type="radio" name="payment_type" class="css-checkbox">
-                                <label for="visa" class="css-label">Visa</label>
-                                <br>
-                                <input id="mastercard" type="radio" name="payment_type" class="css-checkbox">
-                                <label for="mastercard" class="css-label">MasterCard</label>
-                            </div>
-                            <div class="cards">
-                                <div class="visa card"></div>
-                                <div class="mastercard card"></div>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="row">
-                        <div class="span4">Электронные деньги</div>
-                        <div class="span4">
-                            <input id="mailru" type="radio" name="payment_type" class="css-checkbox">
-                            <label for="mailru" class="css-label">Деньги@Mail.ru</label>
-                            <br>
-                            <input id="yandex" type="radio" name="payment_type" class="css-checkbox">
-                            <label for="yandex" class="css-label">Яндекс.Деньги</label>
-                            <br>
-                            <input id="sberbank" type="radio" name="payment_type" class="css-checkbox">
-                            <label for="sberbank" class="css-label">Сбербанк Онл@йн</label>
-                            <br>
-                            <input id="webmoney" type="radio" name="payment_type" class="css-checkbox">
-                            <label for="webmoney" class="css-label">Web Money</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="span12 grey">Предоплаченный заказ вручается лицу, указанному в качестве Получателя Заказа по документу, удостоверяющему личность.</div>
-                    </div>
-                    <div class="row">
-                        <div class="span4"><a href="#" class="prev-step">Верунться в корзину<i></i></a></div>
-                        <div class="span4"><a href="/verstka/abaris/order-step2.html" class="next-step">Продолжить<i></i></a></div>
+                        <div class="span12 black">Способ оплаты (<a href="#">изменить</a>):<br>
+                            <span class="grey">наличный расчет</span></div>
                     </div>
                     <div class="row">
                         <div class="span12 garant">Мы гарантируем безопасность введенных на сайте данных</div>
                     </div>
                     <div class="row">
-                        <div class="span12 call grey">Заказ по телефон 8 (999) 464- 456- 998, назвав номер корзины <span>121</span></div>
+                        <div class="span12 grey">
+                            <span>* Подтверждая заказ Вы обязуетесь оплатить и забрать товар</span><br>
+                            <input id="confirm" type="checkbox" name="confirm" class="css-checkbox">
+                            <label for="confirm" class="css-label">Я согласен с <a href="#">данными условиями</a> (Условия обслуживания)</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span4"><a href="/verstka/abaris/order-step2.html" class="prev-step">Верунться к шагу 2<i></i></a></div>
+                        <div class="span4"><a href="#" data-target=".thanks2" class="next-step open">Подтвердить</a></div>
                     </div>
                 </form>
             </div>
@@ -278,6 +277,7 @@
         <script src="js/main.js"></script>
         <script src="js/abaris-modal.js"></script>
         <script src="js/order.js"></script>
+        <script src="js/catalog.js"></script>
 
         <script>
             $(function(){

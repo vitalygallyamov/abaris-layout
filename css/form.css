@@ -8,6 +8,10 @@
   color: #717171;
   height: 25px;
   padding: 0 2%; }
+.abaris-form textarea.text-input {
+  height: auto;
+  padding: 2%;
+  font-family: Arial; }
 .abaris-form label {
   color: #252525; }
 .abaris-form .info {
@@ -89,7 +93,6 @@
   height: 23px;
   padding-left: 25px;
   background: no-repeat left center url("../img/garant.gif");
-  margin-left: 20px;
   margin-bottom: 20px; }
 .abaris-form .cancel-signup {
   padding: 10px;

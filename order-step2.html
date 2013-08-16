@@ -95,10 +95,9 @@
                     </form>
                 </div>
             </div>
-            <!-- end breadcrumbs -->
 
             <!-- it will delete -->
-            <a class="open" href="#" data-target=".thanks1">Спасибо1</a>
+            <a class="open" href="#asfasdg" data-target=".thanks1">Спасибо1</a>
             <a class="open" href="#" data-target=".thanks2">Спасибо2</a>
             <a class="open" href="#" data-target=".thanks3">Спасибо3</a>
             <a class="open" href="#" data-target=".thanks4">В корзину</a>
@@ -151,9 +150,9 @@
                 <h2 class="georgia">Оформление заказа</h2>
                 <div>
                     <span class="blue-line"></span>
-                    <span class="steps">Шаг <span>1</span> из 3</span>
+                    <span class="steps">Шаг <span>2</span> из 3</span>
                 </div>
-                <div class="step-type georgia">Способ оплаты</div>
+                <div class="step-type georgia">Информация о заказе</div>
             </div>
             <div class="subtotal">
                 <div class="container">
@@ -162,57 +161,69 @@
                     <div class="span2"><span class="georgia">7919 р.</span> Итого</div>
                 </div>
             </div>
-            <div class="order container order-step1">
-                <h2 class="georgia">Выбирите способ оплаты</h2>
-                <form class="abaris-form" action="" method="POST">
+            
+            <!-- begin order steps  (step 2)-->
+            <div class="order container order-step2">
+                <h2 class="georgia">Получатель</h2>
+                <form id="order-form-step2" class="abaris-form" action="" method="POST">
                     <div class="row">
-                        <div class="span4">Наличные</div>
+                        <div class="span4"><label>Фамилия <span class="required">*</span></label></div>
                         <div class="span4">
-                            <input id="nal" type="radio" name="payment_type" checked class="css-checkbox">
-                            <label for="nal" name="demo_lbl_1" class="css-label">Наличный расчет</label>
+                            <input class="text-input" type="text">
                         </div>
                     </div>
                     <div class="row">
-                        <div class="span4">Банковские карты</div>
+                        <div class="span4"><label>Имя <span class="required">*</span></label></div>
                         <div class="span4">
-                            <div class="types">
-                                <input id="visa" type="radio" name="payment_type" class="css-checkbox">
-                                <label for="visa" class="css-label">Visa</label>
-                                <br>
-                                <input id="mastercard" type="radio" name="payment_type" class="css-checkbox">
-                                <label for="mastercard" class="css-label">MasterCard</label>
-                            </div>
-                            <div class="cards">
-                                <div class="visa card"></div>
-                                <div class="mastercard card"></div>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="row">
-                        <div class="span4">Электронные деньги</div>
-                        <div class="span4">
-                            <input id="mailru" type="radio" name="payment_type" class="css-checkbox">
-                            <label for="mailru" class="css-label">Деньги@Mail.ru</label>
-                            <br>
-                            <input id="yandex" type="radio" name="payment_type" class="css-checkbox">
-                            <label for="yandex" class="css-label">Яндекс.Деньги</label>
-                            <br>
-                            <input id="sberbank" type="radio" name="payment_type" class="css-checkbox">
-                            <label for="sberbank" class="css-label">Сбербанк Онл@йн</label>
-                            <br>
-                            <input id="webmoney" type="radio" name="payment_type" class="css-checkbox">
-                            <label for="webmoney" class="css-label">Web Money</label>
+                            <input class="text-input" type="text">
                         </div>
                     </div>
                     <div class="row">
-                        <div class="span12 grey">Предоплаченный заказ вручается лицу, указанному в качестве Получателя Заказа по документу, удостоверяющему личность.</div>
+                        <div class="span4"><label>Отчество <span class="required">*</span></label></div>
+                        <div class="span4">
+                            <input class="text-input" type="text">
+                        </div>
                     </div>
                     <div class="row">
-                        <div class="span4"><a href="#" class="prev-step">Верунться в корзину<i></i></a></div>
-                        <div class="span4"><a href="/verstka/abaris/order-step2.html" class="next-step">Продолжить<i></i></a></div>
+                        <div class="span4"><label>E-mail <span class="required">*</span></label></div>
+                        <div class="span4">
+                            <input class="text-input" type="email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span4"><label>Номер телефона <span class="required">*</span></label></div>
+                        <div class="span4">
+                            <input class="text-input error-input" type="text">
+                        </div>
+                        <div class="span4 tt">
+                            <a class="information" data-toggle="tooltip" data-placement="top" data-original-title="Укажите Ваш номер телефона, чтобы мы могли сообщить Вам, когда придет заказ "><img src="img/tooltip.gif" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span4"><label>Комментарий к заказу <span class="required">*</span></label></div>
+                        <div class="span4">
+                            <textarea class="text-input" name="msg" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="row req-info offset">
+                        <div class="span12"><span class="required">*</span> Поля обязательные для заполнения</div>
+                    </div>
+                    <div class="row offset">
+                        <div class="span12">Адрес магазина:  <span class="grey">г Тюмень, ул. Ордженекидзе 112</span></div>
+                    </div>
+                    <div class="row offset">
+                        <div class="span12">
+                            <input id="preferred" type="checkbox" name="preferred" class="css-checkbox">
+                            <label for="preferred" class="css-label">использовать условия оплаты и ввденные личные данные этого заказа в качестве предпочтительных</label>
+                            <br>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="span12 garant">Мы гарантируем безопасность введенных на сайте данных</div>
+                    </div>
+                    <div class="row">
+                        <div class="span4"><a href="/verstka/abaris/order.html" class="prev-step">Верунться к шагу 1<i></i></a></div>
+                        <div class="span4"><a href="/verstka/abaris/order-step3.html" class="next-step">Продолжить<i></i></a></div>
                     </div>
                     <div class="row">
                         <div class="span12 call grey">Заказ по телефон 8 (999) 464- 456- 998, назвав номер корзины <span>121</span></div>
@@ -220,6 +231,8 @@
                 </form>
             </div>
             <!-- end oreder steps -->
+
+            <!-- end breadcrumbs -->
             <div class="push"></div>
         </div>
 

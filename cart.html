@@ -17,8 +17,8 @@
 
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/form.css">
-        <link rel="stylesheet" href="css/order.css">
-        <link rel="stylesheet" href="css/abaris-modal.css">
+        <link rel="stylesheet" href="css/catalog.css">
+        <link rel="stylesheet" href="css/cart.css">
 
         <!--[if lt IE 9]>
             <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
@@ -75,7 +75,7 @@
             <!-- end header block-->
             <!-- begin breadcrumbs -->
             <div>
-                <div class="container">
+                <div class="container grey-border">
                     <ul class="breadcrumbs">
                         <li><a class="home" href="/">Главная</a></li>
                         <li class="sep"></li>
@@ -95,144 +95,123 @@
                     </form>
                 </div>
             </div>
-
-            <!-- it will delete -->
-            <a class="open" href="#asfasdg" data-target=".thanks1">Спасибо1</a>
-            <a class="open" href="#" data-target=".thanks2">Спасибо2</a>
-            <a class="open" href="#" data-target=".thanks3">Спасибо3</a>
-            <a class="open" href="#" data-target=".thanks4">В корзину</a>
-            <!-- it will delete -->
-
-            <!-- begin modal windows -->
-            <div class="inline-modal thanks1">
-                <h3>Спасибо!</h3>
-                <div class="row-fluid">
-                    <div class="span12 info">Спасибо, что оформили заказ на сайте Абарис. В личном кабинете Вы сможете тслеживать статус заказа.<br>Когда Ваш товар придет, мы Вам об этом сообщим по указанному номеру телефона и e-mail.</div>
-                </div>
-                <div class="row-fluid">
-                    <div class="span6"><a class="valign" href="#">Зарегистрироваться</a></div>
-                    <div class="span6"><a href="#" class="blue-button">Записаться на СТО</a></div>
-                </div>
-            </div>
-
-            <div class="inline-modal thanks2">
-                <h3>Спасибо!</h3>
-                <div class="row-fluid">
-                    <div class="span12 info">Спасибо, что оформили заказ на сайте Абарис. В личном кабинете Вы сможете тслеживать статус заказа. <br>Когда Ваш товар перидет, мы Вам об этом сообщим по указанному номеру телефона и e-mail. </div>
-                </div>
-                <div class="row-fluid">
-                    <div class="span12"><a href="#">Перейти в личный кабинет</a></div>
-                </div>
-                <div class="row-fluid"><div class="span12"><a href="#" class="blue-button">Записаться на СТО</a></div></div>
-            </div>
-
-             <div class="inline-modal thanks3">
-                <h3>Спасибо!</h3>
-                <div class="row-fluid">
-                    <div class="span12 info">Спасибо, что нашли время и зарегестрировались на сайте Абарис, на Ваш e-mail было отправлено письмо. Перейдите, пожалуйста по ссылке в письме для завершения регистрации.</div>
-                </div>
-                <div class="row-fluid"><div class="span12"><a href="#" class="blue-button">Пожалуйста!</a></div></div>
-            </div>
-
-            <div class="inline-modal thanks4">
-                <div class="row-fluid">
-                    <div class="span12 info">Вы положили товар в корзину, можете перейти к оформлению заказа или посмотреть другие товары</div>
-                </div>
-                <div class="row-fluid">
-                    <div class="span12"><a href="#">Посмотреть еще товары</a></div>
-                </div>
-                <div class="row-fluid"><div class="span12"><a href="#" class="blue-button">Перейти к оформлению заказа!</a></div></div>
-            </div>
-            <!-- end modal windows -->
+            <!-- end breadcrumbs -->
             
+            <div class="inline-modal sto-modal">
+                <h3>Мы можем установить за Вас купленную запчасть</h3>
+                <div class="grey list">
+                    —  Вы можете записаться на СТО онлайн, выбрав удобное для Вас время<br>
+                    —  Специалисты высшей категории выполнят любой вид работ
+                </div>
+                <a class="blue-button" href="#">Спасибо, буду иметь ввиду!</a>
+            </div>
+
             <!-- begin order steps  (step 1)-->
-            <div class="container order title">
-                <h2 class="georgia">Оформление заказа</h2>
+            <div class="container page-title">
+                <h2 class="georgia">Корзина №1</h2>
                 <div>
                     <span class="blue-line"></span>
-                    <span class="steps">Шаг <span>2</span> из 3</span>
                 </div>
-                <div class="step-type georgia">Информация о заказе</div>
             </div>
-            <div class="subtotal">
+            <div class="catalog-container">
+                <div class="catalog-grid">
+                    <div class="catalog-grid-header">
+                        <div class="container">
+                            <div class="row-fluid">
+                                <div class="field span1"><div class="valign-text"><p><span class="check grey-check"></span></p></div></div>
+                                <div class="field span7"><div class="valign-text"><p>Название</p></div></div>
+                                <div class="field span1"><div class="valign-text"><p>Количество</p></div></div>
+                                <div class="field span2"><div class="valign-text"><p>Цена<br>скидка<br>со скидкой</p></div></div>
+                                <div class="field span1"><div class="valign-text"><p>Срок доставки</p></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="" method="POST">
+                    <div class="catalog-grid-row no-hover">
+                        <div class="container">
+                            <div class="row-fluid">
+                                <div class="span1 field no-background"><div class="valign-text"><p><span class="check blue-check"></span></p></div></div>
+                                <div class="span3 field img no-background"><img src="img/photo_engine.jpg" alt=""></div>
+                                <div class="span4 field left"><div class="valign-text">
+                                    <p><a href="#">Упорная пластина натяжителя цепи</a><br>производитель Hyndai<br>код: 12382340</p>
+                                </div></div>
+                                <div class="span1 field">
+                                    <div class="valign-text"> 
+                                        <p><input name="counter" class="spinner" value="1"></p>
+                                    </div>
+                                </div>
+                                <div class="span2 field">
+                                    <div class="valign-text">
+                                        <p>
+                                            <span class="red">4 526</span> руб. <br>
+                                            <span class="blue">15 %</span><br>
+                                            <span class="blue">4 526</span> руб.</p>
+                                    </div>
+                                </div>
+                                <div class="span1 field"><div class="valign-text"><p>14 дней</p></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-grid-row no-hover">
+                        <div class="container">
+                            <div class="row-fluid">
+                                <div class="span1 field no-background"><div class="valign-text"><p><span class="check blue-check"></span></p></div></div>
+                                <div class="span3 field img no-background"><img src="img/photo_engine.jpg" alt=""></div>
+                                <div class="span4 field left"><div class="valign-text">
+                                    <p><a href="#">Упорная пластина натяжителя цепи</a><br>производитель Hyndai<br>код: 12382340</p>
+                                </div></div>
+                                <div class="span1 field">
+                                    <div class="valign-text"> 
+                                        <p><input name="counter" class="spinner" value="1"></p>
+                                    </div>
+                                </div>
+                                <div class="span2 field">
+                                    <div class="valign-text">
+                                        <p>
+                                            <span class="red">4 526</span> руб. <br>
+                                            <span class="blue">15 %</span><br>
+                                            <span class="blue">4 526</span> руб.</p>
+                                    </div>
+                                </div>
+                                <div class="span1 field"><div class="valign-text"><p>14 дней</p></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <div class="subtotal icons">
                 <div class="container">
-                    <div class="span1"><span class="georgia">790</span> Товары</div>
-                    <div class="span1"><span class="georgia">5%</span> Скидка</div>
-                    <div class="span2"><span class="georgia">7919 р.</span> Итого</div>
+                    <div class="span1">
+                        <div class="select cart-icon select-icon"></div>
+                        Выделен (1)
+                    </div>
+                    <div class="span1">
+                        <div class="select cart-icon hold-icon"></div>
+                        Отложить (1)
+                    </div>
+                    <div class="span1">
+                        <div class="select cart-icon delete-icon"></div>
+                        Удалить (1)
+                    </div>
+                    <div class="span5"></div>
+                    <div class="span2"><span class="georgia summ">7919 р.</span> Итого</div>
+                    <div class="span1"><div class="select cart-icon pay-icon"></div>Оплатить</div>
                 </div>
             </div>
-            
-            <!-- begin order steps  (step 2)-->
-            <div class="order container order-step2">
-                <h2 class="georgia">Получатель</h2>
-                <form id="order-form-step2" class="abaris-form" action="" method="POST">
-                    <div class="row">
-                        <div class="span4"><label>Фамилия <span class="required">*</span></label></div>
-                        <div class="span4">
-                            <input class="text-input" type="text">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="span4"><label>Имя <span class="required">*</span></label></div>
-                        <div class="span4">
-                            <input class="text-input" type="text">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="span4"><label>Отчество <span class="required">*</span></label></div>
-                        <div class="span4">
-                            <input class="text-input" type="text">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="span4"><label>E-mail <span class="required">*</span></label></div>
-                        <div class="span4">
-                            <input class="text-input" type="email">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="span4"><label>Номер телефона <span class="required">*</span></label></div>
-                        <div class="span4">
-                            <input class="text-input error-input" type="text">
-                        </div>
-                        <div class="span4 tt">
-                            <a class="information" data-toggle="tooltip" data-placement="top" data-original-title="Укажите Ваш номер телефона, чтобы мы могли сообщить Вам, когда придет заказ "><img src="img/tooltip.gif" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="span4"><label>Комментарий к заказу <span class="required">*</span></label></div>
-                        <div class="span4">
-                            <textarea class="text-input" name="msg" rows="10"></textarea>
-                        </div>
-                    </div>
-                    <div class="row req-info offset">
-                        <div class="span12"><span class="required">*</span> Поля обязательные для заполнения</div>
-                    </div>
-                    <div class="row offset">
-                        <div class="span12">Адрес магазина:  <span class="grey">г Тюмень, ул. Ордженекидзе 112</span></div>
-                    </div>
-                    <div class="row offset">
-                        <div class="span12">
-                            <input id="preferred" type="checkbox" name="preferred" class="css-checkbox">
-                            <label for="preferred" class="css-label">использовать условия оплаты и ввденные личные данные этого заказа в качестве предпочтительных</label>
-                            <br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="span12 garant">Мы гарантируем безопасность введенных на сайте данных</div>
-                    </div>
-                    <div class="row">
-                        <div class="span4"><a href="/verstka/abaris/order.html" class="prev-step">Верунться к шагу 1<i></i></a></div>
-                        <div class="span4"><a href="/verstka/abaris/order-step3.html" class="next-step">Продолжить<i></i></a></div>
-                    </div>
-                    <div class="row">
-                        <div class="span12 call grey">Заказ по телефон 8 (999) 464- 456- 998, назвав номер корзины <span>121</span></div>
-                    </div>
-                </form>
+            <div class="container info">
+                <div class="span12 right">* Чтобы пропустить шаги оформления заказа можете заказить выбранный товар по телефон 8 (999) 464- 456- 998, назвав номер корзины</div>
+            </div>
+            <div class="container dop-info abacus">
+                <div class="abacus"></div>
+                <a href="#">Ознакомиться с условиями доставки и возврата</a>
+            </div>
+            <div class="container dop-info abacus">
+                <div class="cog"></div>
+                <a href="#">Ознакомиться с условиями доставки и возврата</a>
+                <span>У нашей компании есть сеть СТО, на которые Вы можете записаться в удобное время и пройти техническое обслуживание</span>
             </div>
             <!-- end oreder steps -->
-
-            <!-- end breadcrumbs -->
             <div class="push"></div>
         </div>
 
@@ -288,9 +267,10 @@
         <script src="js/vendor/fancybox/jquery.fancybox.pack.js"></script>
         <script src="js/vendor/fancybox/jquery.fancybox.js"></script>
 
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
         <script src="js/main.js"></script>
-        <script src="js/abaris-modal.js"></script>
-        <script src="js/order.js"></script>
+        <script src="js/cart.js"></script>
 
         <script>
             $(function(){

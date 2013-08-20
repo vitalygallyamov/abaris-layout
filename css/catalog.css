@@ -1,5 +1,7 @@
 .catalog-container {
   margin-bottom: 50px; }
+  .catalog-container .left p {
+    text-align: left; }
 
 .catalog-model {
   min-height: 300px;
@@ -44,6 +46,8 @@
     background: no-repeat right center url("../img/field-border.png");
     position: relative;
     text-align: center; }
+  .catalog-grid-row .no-background {
+    background: none; }
   .catalog-grid-row .img {
     overflow: hidden; }
     .catalog-grid-row .img img {

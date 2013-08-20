@@ -2,6 +2,35 @@ html, body {
   height: 100%;
   font-family: Arial; }
 
+input:focus {
+  outline: none; }
+
+.clear {
+  clear: both; }
+
+.grey {
+  color: #717171; }
+
+.blue {
+  color: #296bb1; }
+
+.grey-border {
+  border-bottom: 1px solid #cccccc; }
+
+a.b-button, a.b-button:visited {
+  text-decoration: none;
+  display: block;
+  padding: 7px 0;
+  text-align: center;
+  border: none;
+  color: white; }
+
+a.b-button-blue {
+  background-color: #296bb1; }
+
+a.b-button-red {
+  background-color: #ff665d; }
+
 /* ====================
  *  User-panel
  * ==================== */
@@ -322,6 +351,42 @@ html, body {
   border: 1px solid #6e6e6e; }
 .abaris-modal .fancybox-inner {
   border: 1px solid #9b9b9b; }
+
+a, a:visited {
+  color: #296bb1; }
+
+.georgia {
+  font-family: Georgia;
+  font-weight: normal;
+  line-height: 1; }
+
+.page-title {
+  margin-top: 20px;
+  padding: 0 2%;
+  margin-bottom: 10px; }
+  .page-title h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 20px; }
+  .page-title .blue-line {
+    display: inline-block;
+    width: 100px;
+    height: 7px;
+    background-color: #1059a9;
+    margin-right: 10px; }
+
+.subtotal {
+  background-color: #656565;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 10px; }
+  .subtotal .span2, .subtotal .span1 {
+    padding: 10px 0; }
+  .subtotal span {
+    font-size: 24px;
+    display: block;
+    padding-bottom: 5px; }
 
 /* ==========================================================================
  * Media Queries

@@ -1,4 +1,7 @@
 /* form_in_fancy */
+.stretch {
+  min-width: 400px; }
+
 .abaris-form .row-fluid {
   margin-top: 5px; }
 .abaris-form .text-input {
@@ -58,7 +61,8 @@
   padding: 10px 0;
   display: block;
   text-align: center;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-top: 10px; }
 .abaris-form .css-label {
   background-image: url("../img/checkbox.png");
   color: #717171; }

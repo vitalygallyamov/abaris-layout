@@ -2,7 +2,7 @@ html, body {
   height: 100%;
   font-family: Arial; }
 
-input:focus {
+input:focus, select {
   outline: none; }
 
 .clear {
@@ -13,6 +13,9 @@ input:focus {
 
 .blue {
   color: #296bb1; }
+
+.red {
+  color: #ff665d; }
 
 .grey-border {
   border-bottom: 1px solid #cccccc; }

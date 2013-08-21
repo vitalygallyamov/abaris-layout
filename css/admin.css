@@ -30,15 +30,6 @@
   .catalog-container .calendar {
     width: 80%;
     background: no-repeat 95% center url("../img/calendar.gif"); }
-  .catalog-container input, .catalog-container select {
-    width: 90%;
-    border: none;
-    background: none;
-    background-color: white;
-    padding: 3px;
-    color: #717171;
-    -webkit-box-shadow: inset 1px 1px 2px 1px #aaaaaa;
-    box-shadow: inset 1px 1px 2px 1px #aaaaaa; }
 
 .check {
   width: 28px;

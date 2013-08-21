@@ -391,6 +391,29 @@ a, a:visited {
     display: block;
     padding-bottom: 5px; }
 
+/* pager */
+.catalog-pager {
+  margin: 25px 0;
+  text-align: center;
+  color: #ff665d;
+  font-size: 12px; }
+  .catalog-pager ul {
+    display: inline-block; }
+  .catalog-pager li {
+    display: inline-block;
+    margin-right: 5px;
+    height: 15px; }
+  .catalog-pager a, .catalog-pager a:visited {
+    color: #717171;
+    text-decoration: none; }
+  .catalog-pager .arrow {
+    width: 8px;
+    margin-bottom: -3px; }
+  .catalog-pager .left {
+    background: no-repeat 0 0 url("../img/pager_arrows.gif"); }
+  .catalog-pager .right {
+    background: no-repeat -8px 0 url("../img/pager_arrows.gif"); }
+
 /* popover */
 .user-panel .popover {
   width: 200px;

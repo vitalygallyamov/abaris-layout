@@ -1,17 +1,31 @@
+$grey: #717171
+$dark-grey: #252525
+$red: #ff665d
+
+@import "helper"
+
 .catalog-container
   margin-bottom: 50px
+  input, select
+    width: 90%
+    border: none
+    background: none
+    background-color: #fff
+    padding: 3px
+    color: $grey
+    @include inset_box_shadow(1px , 1px, 2px, 1px, #aaa)
   .left p
     text-align: left
 .catalog-model
   min-height: 300px
+  text-align: center
   background: no-repeat center url('../img/catalog_model_bg.jpg')
   img
-    margin: 5%
-    float: left
+    margin-top: 10%
 
 .auto-title
-  float: left
   text-align: right
+  float: left
 
 .catalog-model
   h2
@@ -53,6 +67,8 @@
     overflow: hidden
     img
       max-width: none
+.no-hover
+  cursor: auto
 
 
 .valign-text
@@ -93,6 +109,13 @@
   -webkit-box-shadow: 0px 2px 5px 0px #d1d1d1
   box-shadow: 0px 2px 5px 0px #d1d1d1
 
+@media (max-width: 979px)
+  .catalog-container
+    .catalog-model
+      h2
+        font-size: 30px
+
+
 @media (max-width: 767px)
   .row-fluid 
     .left p
@@ -104,3 +127,10 @@
     width: 90%
   .catalog-grid-header
     display: none
+  .catalog-container
+    .catalog-model
+      h2
+        margin: 0
+      .auto-title
+        float: none
+        text-align: center

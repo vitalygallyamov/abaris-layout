@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/form.css">
         <link rel="stylesheet" href="css/catalog.css">
-        <link rel="stylesheet" href="css/admin.css">
+        <link rel="stylesheet" href="css/engine.css">
 
         <!--[if lt IE 9]>
             <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
@@ -75,7 +75,7 @@
             <!-- end header block-->
             <!-- begin breadcrumbs -->
             <div>
-                <div class="container grey-border">
+                <div class="container">
                     <ul class="breadcrumbs">
                         <li><a class="home" href="/">Главная</a></li>
                         <li class="sep"></li>
@@ -96,153 +96,144 @@
                 </div>
             </div>
             <!-- end breadcrumbs -->
-            <div class="container page-title">
-                <h2 class="georgia">Личный кабинет</h2>
-                <div>
-                    <span class="blue-line"></span><br>
-                    <span class="red">Ваш уникальный код пользователя 01</span>
-                </div>
-            </div>
-
-            <div class="admin-steps container">
-                <div class="text">В личном кабинете вы можете:</div>
-                <div class="clearfix">
-                    <div class="step">
-                        <table><tr><td><span class="big">1</span></td><td><a href="/admin.html">Управлять автомобилями</a></td></tr></table>
-                    </div>
-                    <div class="step">
-                        <table><tr><td><span class="big">2</span></td><td><a href="/admin-step2.html">Вести учет технического обслуживания автомобилей</a></td></tr></table>
-                    </div>
-                    <div class="step">
-                        <table><tr><td><span class="big">3</span></td><td><a href="/admin-step3.html">Просматривать состояние заказа</a></td></tr></table>
-                    </div>
-                    <div class="step">
-                        <table><tr><td><span class="big">4</span></td><td><a href="/admin-step4.html">Проверять и оплачивать счета</a></td></tr></table>
-                    </div>
-                    <div class="step active">
-                        <table><tr><td><span class="big">5</span></td><td><a href="/admin-step5.html">Вносить изменения в личные данные</a></td></tr></table>
+            <div class="catalog-container">
+                <div class="catalog-model">
+                    <div class="container">
+                        <div class="row">
+                            <div class="span6"><img src="img/hyundai_auto.png" alt=""></div>
+                            <div class="span4">
+                                <div class="auto-title">
+                                    <h2>—  Grandeur V (GH)</h2>
+                                    <span>2011 - наст. время</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="text">Вы можете привязать один или несколько автомобилей к аккаунту <br> прямо сейчас или сделать это позже в личном кабинете.</div>
-            </div>
-            <!-- begin list-->
-            <div class="container">
-                <div class="row">
-                    <div class="span6">
-                        <form class="abaris-form" method="POST" action="">
-                            <div class="row-fluid">
-                                <div class="span12 type">
-                                    <input id="fiz" type="radio" name="type" checked class="css-checkbox">
-                                    <label for="fiz" name="demo_lbl_1" class="css-label">Частное лицо</label>
-                                    <br>
-                                    <input id="ur" type="radio" name="type" class="css-checkbox">
-                                    <label for="ur" name="demo_lbl_1" class="css-label">Юридическое</label>
+                <div class="parts">
+                    <div class="container">
+                        <form action="" class="abaris-form">
+                            <div class="row">
+                                <div class="span3">
+                                    <label for="">Группа запчастей</label>
+                                    <select name="" id="">
+                                        <option value="">Выберите</option>
+                                        <option value="">Х*й</option>
+                                    </select>
                                 </div>
                             </div>
-                            <div class="row-fluid">
-                                <div class="span4"><label>Имя<span class="required">*</span></label></div>
-                                <div class="span8">
-                                    <input class="text-input" type="text">
+                            <div class="row">
+                                <div class="span3">
+                                    <label for="">Подгруппа запчастей</label>
+                                    <select name="" id="">
+                                        <option value="">Выберите</option>
+                                        <option value="">Х*й</option>
+                                    </select>
                                 </div>
-                            </div>
-                            <div class="row-fluid">
-                                <div class="span4"><label>Фамилия<span class="required">*</span></label></div>
-                                <div class="span8">
-                                    <input class="text-input" type="text">
-                                </div>
-                            </div>
-                            <div class="row-fluid">
-                                <div class="span4"><label>E-mail <span class="required">*</span></label></div>
-                                <div class="span8">
-                                    <input class="text-input" type="email">
-                                </div>
-                            </div>
-                            <div class="row-fluid">
-                                <div class="span4"><label>Номер телефона <span class="required">*</span></label></div>
-                                <div class="span8">
-                                    <input class="text-input" type="text">
-                                </div>
-                            </div>
-                            <div class="row-fluid">
-                                <div class="span4"><label>Привязанна дисконтная карта №</label></div>
-                                <div class="span8">
-                                    <input class="text-input" type="text">
-                                </div>
-                            </div>
-                            <div class="row-fluid">
-                                <div class="span4"><label>Пароль</label></div>
-                                <div class="span8">
-                                    <input class="text-input" type="password">
-                                </div>
-                            </div>
-                            <div class="row-fluid">
-                                <div class="span4"><label>Новый пароль</label></div>
-                                <div class="span8">
-                                    <input class="text-input" type="password">
-                                </div>
-                            </div>
-                            <!--organization-->
-                            <div class="organization" style="display: none">
-                                <div class="row-fluid">
-                                    <div class="span4"><label>Наименование организации</label></div>
-                                    <div class="span8">
-                                        <input class="text-input" type="text">
-                                    </div>
-
-                                </div>
-                                <div class="row-fluid">
-                                    <div class="span4"><label>Наименование юр. лица</label></div>
-                                    <div class="span8">
-                                        <input class="text-input" type="text">
-                                    </div>
-                                </div>
-                                <div class="row-fluid">
-                                    <div class="span4"><label>ФИО руководителя</label></div>
-                                    <div class="span8">
-                                        <input class="text-input" type="text">
-                                    </div>
-                                </div>
-                                <div class="row-fluid">
-                                    <div class="span4"><label>КПП</label></div>
-                                    <div class="span8">
-                                        <input class="text-input" type="text">
-                                    </div>
-                                </div>
-                                <div class="row-fluid">
-                                    <div class="span4"><label>БИК банка</label></div>
-                                    <div class="span8">
-                                        <input class="text-input" type="text">
-                                    </div>
-                                </div>
-                                <div class="row-fluid">
-                                    <div class="span4"><label>№ расч. счета</label></div>
-                                    <div class="span8">
-                                        <input class="text-input" type="text">
-                                    </div>
-                                </div>
-                                <div class="row-fluid">
-                                    <div class="span4"><label>Система налогооблажения</label></div>
-                                    <div class="span8">
-                                        <select class="text-input">
-                                            <option>Общая</option>
-                                            <option>Общая</option>
-                                            <option>Общая</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row-fluid req-info">
-                                <div class="span12"><span class="required">*</span> Поля обязательные для заполнения</div>
-                            </div>
-                            <div class="row-fluid">
-                                <div class="span12"><a class="login-submit" href="#">Сохранить</a></div>
                             </div>
                         </form>
                     </div>
                 </div>
+                <div class="catalog-grid">
+                    <div class="catalog-grid-header">
+                        <div class="container">
+                            <div class="row-fluid">
+                                <div class="field span4">
+                                    <div class="valign-text">
+                                        <p class="bottom">Наименование<br><input type="text"></p>
+                                    </div>
+                                </div>
+                                <div class="field span4">
+                                    <div class="valign-text">
+                                        <p class="bottom">Артикул<br><input type="text"></p>
+                                    </div>
+                                </div>
+                                <div class="field span3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-grid-row no-hover">
+                        <div class="container">
+                            <div class="row-fluid">
+                                <div class="field span4">
+                                    <div class="valign-text">
+                                        <p>Адаптер- механизм натяжения оываывоа ывлоа</p>
+                                    </div>
+                                </div>
+                                <div class="field span4">
+                                    <div class="valign-text">
+                                        <p>SDFG1224323</p>
+                                    </div>
+                                </div>
+                                <div class="field span3">
+                                    <div class="valign-text">
+                                        <p><a href="#">Посмотреть цену и наличие товара</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-grid-row no-hover">
+                        <div class="container">
+                           <div class="row-fluid">
+                                <div class="field span4">
+                                    <div class="valign-text">
+                                        <p>Адаптер- механизм натяжения оываывоа ывлоа</p>
+                                    </div>
+                                </div>
+                                <div class="field span4">
+                                    <div class="valign-text">
+                                        <p>SDFG1224323</p>
+                                    </div>
+                                </div>
+                                <div class="field span3">
+                                    <div class="valign-text">
+                                        <p><a href="#">Посмотреть цену и наличие товара</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-grid-row no-hover">
+                        <div class="container">
+                           <div class="row-fluid">
+                                <div class="field span4">
+                                    <div class="valign-text">
+                                        <p>Адаптер- механизм натяжения оываывоа ывлоа</p>
+                                    </div>
+                                </div>
+                                <div class="field span4">
+                                    <div class="valign-text">
+                                        <p>SDFG1224323</p>
+                                    </div>
+                                </div>
+                                <div class="field span3">
+                                    <div class="valign-text">
+                                        <p><a href="#">Посмотреть цену и наличие товара</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-pager">
+                    <div class="container">
+                        <div>
+                            <ul>
+                                <li class="arrow left"></li>
+                                <li>1</li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">...</a></li>
+                                <li><a href="#">10</a></li>
+                                <li><a href="#">20</a></li>
+                                <li class="arrow right"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- end list -->
             <div class="push"></div>
         </div>
 
@@ -298,17 +289,7 @@
         <script src="js/vendor/fancybox/jquery.fancybox.pack.js"></script>
         <script src="js/vendor/fancybox/jquery.fancybox.js"></script>
 
-        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-
         <script src="js/main.js"></script>
-        <script src="js/admin.js"></script>
-
-        <script>
-            $(function(){
-                $('.open').on('click', function(){
-                    $.show_abaris_box($(this).data('target'));
-                });
-            });
-        </script>
+        <script src="js/catalog.js"></script>
     </body>
 </html>

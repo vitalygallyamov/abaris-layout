@@ -400,6 +400,31 @@ a, a:visited
     display: block
     padding-bottom: 5px
 
+/* popover */
+
+.user-panel 
+  .popover
+    width: 200px
+    @include border_radius(0)
+    @include none_box_shadow()
+    text-align: center
+    font-size: 12px
+    border: 1px solid #ff7067
+    .arrow
+      &:after
+        border-width: 5px
+    a, a:visited
+      font-size: 12px
+      color: #296bb1
+      text-decoration: underline
+
+  .popover.bottom 
+    .arrow
+      border-bottom-color: transparent
+      &:after
+        margin-left: -5px
+        border-bottom-color: #ff7067
+
 /* ==========================================================================
  * Media Queries
  * ==========================================================================*/
@@ -419,7 +444,7 @@ a, a:visited
     padding-right: 16%
   .footer-menu, .footer-logo
     width: 100%
-  .up-item a
+  .up-item > a
     display: block
     width: 18px
     overflow: hidden

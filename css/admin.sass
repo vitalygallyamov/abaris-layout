@@ -39,6 +39,7 @@ $red: #ff665d
 		width: 90%
 		border: none
 		background: none
+		background-color: #fff
 		padding: 3px
 		color: $grey
 		@include inset_box_shadow(1px , 1px, 2px, 1px, #aaa)
@@ -79,6 +80,44 @@ $red: #ff665d
 .valign-text .bottom
 	vertical-align: bottom
 	padding-bottom: 10px
+.admin-icon
+	width: 45px
+	height: 30px
+	display: block
+	margin: 0 auto
+.admin-icon-money-b
+	background: no-repeat 0 0 url('../img/admin-icons.png')
+.admin-icon-box-b
+	background: no-repeat -45px 0 url('../img/admin-icons.png')
+.admin-icon-print-b
+	background: no-repeat -90px 0 url('../img/admin-icons.png')
+.admin-icon-money-g
+	background: no-repeat 0 -30px url('../img/admin-icons.png')
+.admin-icon-box-g
+	background: no-repeat -45px -30px url('../img/admin-icons.png')
+.active-grey
+	background-color: #f1f1f1
+	border-top: 1px dashed #dadada
+	border-bottom: 1px dashed #dadada
+.pay-types
+	padding: 20px 2%
+	font-size: 12px
+	float: left
+.card
+	width: 29px
+	height: 20px
+	margin: 20px 2px
+	float: left
+.visa
+	background: no-repeat 0 0 url('../img/payment_cards.gif')
+.mastercard
+	background: no-repeat 0 -20px url('../img/payment_cards.gif')
+.abaris-form
+	font-size: 12px
+	line-height: 1.2
+	margin-bottom: 20px
+	.type
+		margin-bottom: 20px
 
 @media (max-width: 767px)
 	.admin-steps
@@ -89,3 +128,7 @@ $red: #ff665d
 			float: none
 		.text
 			padding: 0 2%
+	.abaris-form
+		.row-fluid
+			padding: 0 2%
+			width: 95%

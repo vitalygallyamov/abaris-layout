@@ -6,14 +6,15 @@ $red: #ff665d
 
 .catalog-container
   margin-bottom: 50px
-  input, select
-    width: 90%
-    border: none
-    background: none
-    background-color: #fff
-    padding: 3px
-    color: $grey
-    @include inset_box_shadow(1px , 1px, 2px, 1px, #aaa)
+  .catalog-grid-header
+    input, select
+      width: 90%
+      border: none
+      background: none
+      background-color: #fff
+      padding: 3px
+      color: $grey
+      @include inset_box_shadow(1px , 1px, 2px, 1px, #aaa)
   .left p
     text-align: left
 .catalog-model
@@ -123,6 +124,7 @@ $red: #ff665d
     .field
       height: auto
       text-align: center
+      background: none
   .field img
     width: 90%
   .catalog-grid-header
@@ -134,3 +136,9 @@ $red: #ff665d
       .auto-title
         float: none
         text-align: center
+  .catalog-grid
+    .active 
+      .field
+        background: none
+    .price
+      height: 61px

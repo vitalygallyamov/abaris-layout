@@ -53,28 +53,36 @@ a.b-button-red
   float: left
   margin-right: 5px
   line-height: 1
-  padding: 10px
   border-right: 1px solid #dcdcdc
   a
     font-size: 10px
     color: #777
     padding-top: -2px
     text-decoration: none
+    display: inline-block
+    padding: 10px
+
     &:visited
       font-size: 10px
       color: #777
       padding-top: -2px
       text-decoration: none
+    &:hover .icon, &:active, &.active .icon
+      background-position-y: -16px
   span
     color: #ff665d
+.no-link
+  font-size: 10px
+  color: #777
+  padding: 10px
 
 .icon
   width: 18px
   height: 16px
   margin-right: 5px
-  display: block
+  display: inline-block
   float: left
-  margin-top: 2px
+  margin-top: -2px
 
 .i-user
   background: no-repeat 0 0 url('../img/user_icons.png')
@@ -224,9 +232,9 @@ a.b-button-red
   border: none
   border-left: 1px solid #ccc
   width: 18px
-  height: 18px
+  height: 16px
   margin: 0 5px
-  background: no-repeat -90px center url('../img/user_icons.png')
+  background: no-repeat -90px -16px url('../img/user_icons.png')
 
 /* ====================
  *  main page
@@ -308,7 +316,7 @@ a.b-button-red
   border-top: 2px solid #ff665d
 
 .footer-menu
-  float: left
+  float: right
 
 .footer-logo
   float: left
@@ -368,6 +376,12 @@ a.b-button-red
       color: #ff665d
   .btn-navbar
     display: none
+.best-company
+  margin-right: 20%
+  padding: 30px 0 10px 0
+  text-align: right
+  font-size: 12px 
+  color: $grey
 
 /* fancybox*/
 .model-desc .img
@@ -493,7 +507,8 @@ a, a:visited
     text-decoration: none
   .arrow
     width: 8px
-    margin-bottom: -3px
+    display: inline-block
+    // margin-bottom: -3px
   .left
     background: no-repeat 0 0 url('../img/pager_arrows.gif')
   .right
@@ -590,6 +605,9 @@ a, a:visited
     height: 250px
   .main-wrapper
     margin: 0 0 -252px 0
+  .best-company
+    margin-right: 10px
+    padding: 10px 0 10px 0
 
 @media only screen and (max-width: 644px)
   .brends-block

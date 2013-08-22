@@ -229,6 +229,74 @@ a.b-button-red
   background: no-repeat -90px center url('../img/user_icons.png')
 
 /* ====================
+ *  main page
+ * ====================*/
+
+.black-line
+  margin: 20px 0
+  .container
+    background-color: #000
+    height: 9px
+.big-title
+  margin-bottom: 20px
+  h2
+    font: bold 30px Arial
+    text-align: center
+    margin-bottom: 10px
+  .we-help
+    text-align: center
+    color: $grey
+    font-size: 18px
+    width: 40%
+    margin: 0 auto
+    padding-bottom: 30px
+    border-bottom: 1px solid #000
+// .main-banner
+//   height: 100px
+//   background: no-repeat center url('../img/main-banner.jpg')
+//   margin-bottom: 40px
+// .brends-block
+//   margin-bottom: 30px
+//   .row-rhombs
+//     margin: 0 auto
+//     display: table
+//   .offset
+//     margin-top: -150px
+//   .rhomb
+//     width: 313px
+//     height: 313px
+//     background: no-repeat center url('../img/rhomb.png')
+//     display: table-cell
+//     vertical-align: middle
+//     text-align: center
+.main-banner
+  height: 100px
+  background: no-repeat center url('../img/main-banner.jpg')
+  margin-bottom: 40px
+.brends-block
+  margin-bottom: 30px
+  text-align: center
+  .row-rhombs
+    display: inline-block
+  .offset
+    margin-top: -150px
+  .rhomb
+    width: 313px
+    height: 313px
+    background: no-repeat center url('../img/rhomb.png')
+    display: inline-block
+    vertical-align: middle
+    text-align: center
+    a
+      position: relative
+    img
+      margin-top: 90px
+  .chev img
+    margin-top: 110px
+  .daew img, .ssan img
+    margin-top: 70px
+
+/* ====================
  *  Footer
  * ====================*/
 
@@ -301,19 +369,25 @@ a.b-button-red
     display: none
 
 /* fancybox*/
-
+.model-desc .img
+  text-align: center
 .inline-modal
   display: none
   padding: 25px
   color: #252525
   font-size: 12px
+  .desc
+    padding: 15px 0 10px 5px
+  .scroller
+    height: 500px
+    max-width: 400px
   h3
     font-size: 14px
     color: #000
     margin: 0
     font-weight: normal
     line-height: 1
-    margin-bottom: 10px
+    margin-bottom: 15px
   .valign
     display: block
     text-align: center
@@ -453,6 +527,14 @@ a, a:visited
  * Media Queries
  * ==========================================================================*/
 
+@media only screen and (max-width: 979px)
+  .brends-block
+    .offset
+      margin-top: 10px
+    .ssan
+      margin-top: -660px
+
+
 @media only screen and (max-width: 767px)
   body
     padding: 0
@@ -507,6 +589,13 @@ a, a:visited
     height: 250px
   .main-wrapper
     margin: 0 0 -252px 0
+
+@media only screen and (max-width: 646px)
+  .brends-block
+    .offset
+      margin-top: 10px
+    .ssan
+      margin-top: 0
 
 @media only screen and (max-width: 480px)
   .copyright

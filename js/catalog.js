@@ -2,6 +2,14 @@
 (function() {
   $(function() {
     $.show_abaris_box('.login-form');
+    $.show_abaris_box('.model-desc');
+    $('.scroller').baron({
+      scroller: '.scroller',
+      container: '.scroll-container',
+      bar: '.scroller__bar',
+      track: '.scroller__track',
+      barOnCls: 'baron'
+    });
     return $(".catalog-grid-row").hover(function() {
       if (!$(this).hasClass('no-hover')) {
         return $(this).addClass('active');

@@ -2,6 +2,9 @@
 .stretch {
   min-width: 400px; }
 
+.abaris-form .span4 {
+  line-height: 1.2;
+  min-height: 20px; }
 .abaris-form .row-fluid {
   margin-top: 5px; }
 .abaris-form .text-input {
@@ -157,3 +160,5 @@
   display: block;
   float: left;
   margin-right: 15px; }
+.abaris-form .sep {
+  height: 20px; }

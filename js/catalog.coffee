@@ -1,5 +1,14 @@
 $ ->
 	$.show_abaris_box '.login-form'
+	$.show_abaris_box '.model-desc'
+
+	$('.scroller').baron
+		scroller: '.scroller'
+		container: '.scroll-container'
+		bar: '.scroller__bar'
+		track: '.scroller__track'
+		barOnCls: 'baron'
+
 	$(".catalog-grid-row").hover(
 		() -> 
 			$(@).addClass 'active' if !$(@).hasClass('no-hover')

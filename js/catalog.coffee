@@ -1,13 +1,14 @@
 $ ->
 	$.show_abaris_box '.login-form'
-	$.show_abaris_box '.model-desc'
+	# $.show_abaris_box '.model-desc'
 
-	$('.scroller').baron
-		scroller: '.scroller'
-		container: '.scroll-container'
-		bar: '.scroller__bar'
-		track: '.scroller__track'
-		barOnCls: 'baron'
+	if $('.scroller').length > 0
+		$('.scroller').baron
+			scroller: '.scroller'
+			container: '.scroll-container'
+			bar: '.scroller__bar'
+			track: '.scroller__track'
+			barOnCls: 'baron'
 
 	$(".catalog-grid-row").hover(
 		() -> 

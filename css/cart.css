@@ -19,7 +19,8 @@
 .spinner {
   background: none;
   border: none;
-  width: 30px; }
+  width: 25px;
+  height: 100%; }
 
 .red {
   color: #ff665d; }

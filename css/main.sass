@@ -378,7 +378,7 @@ a.b-button-red
     display: none
 .best-company
   margin-right: 20%
-  padding: 30px 0 10px 0
+  padding: 30px 0 0 0
   text-align: right
   font-size: 12px 
   color: $grey
@@ -394,7 +394,7 @@ a.b-button-red
   .desc
     padding: 15px 0 10px 5px
   .scroller
-    height: 500px
+    max-height: 400px
     max-width: 400px
   h3
     font-size: 14px
@@ -434,11 +434,15 @@ a.b-button-red
     max-width: 450px
     padding: 10px 0
     line-height: 1.1
+  .clone-auto
+    padding-top: 10px
+    margin-top: 10px
+    border-top: 1px dashed #ddd
 
 /* fancybox styles */
 .abaris-modal
   .fancybox-close
-    background-image: url("../img/close_window.gif")
+    background-image: url("../img/close_window.png")
     width: 21px
     height: 21px
     top: 13px
@@ -505,8 +509,11 @@ a, a:visited
   a, a:visited
     color: $grey
     text-decoration: none
+  a:hover
+    color: $red
   .arrow
     width: 8px
+    height: 15px
     display: inline-block
     // margin-bottom: -3px
   .left
@@ -608,6 +615,54 @@ a, a:visited
   .best-company
     margin-right: 10px
     padding: 10px 0 10px 0
+  /* pager */
+
+  .catalog-pager
+    // margin: 25px 0
+    // text-align: center
+    // color: $red
+    // font-size: 12px
+    // ul
+    //   display: inline-block
+    // li
+    //   display: inline-block
+    //   margin-right: 5px
+    //   height: 15px
+    ul
+      display: block
+      margin: 0
+    li
+      display: none
+    .left-li, .right-li
+      display: inline-block
+      width: 47%
+      text-align: center
+      a
+        display: block
+        background-color: #ddd
+        line-height: 1
+        padding: 5px
+        @include border_radius(2px)
+    //   a
+    //     padding: 0
+    // a, a:visited
+    //   color: $grey
+    //   text-decoration: none
+    //   padding: 10px
+    //   background-color: #aaa
+    //   @include border_radius(5px)
+    //   color: #fff
+    // a:active
+    //   background-color: #ccc
+    //   color: $red
+    // .arrow
+    //   width: 8px
+    //   display: inline-block
+    //   // margin-bottom: -3px
+    // .left
+    //   background: no-repeat 0 0 url('../img/pager_arrows.gif')
+    // .right
+    //   background: no-repeat -8px 0 url('../img/pager_arrows.gif')
 
 @media only screen and (max-width: 644px)
   .brends-block
@@ -622,3 +677,10 @@ a, a:visited
   .cog a
     padding-left: 10%
     padding-right: 10%
+
+/*Retina graphics!*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5)
+
+  .abaris-modal .fancybox-close
+    background-image: url('../img/close_window@2x.png')
+    background-size: 21px 21px /*The size of the normal image, half the size of the hi-res image*/

@@ -9,6 +9,9 @@
         up: "spinner-up"
       }
     });
+    $('.catalog-grid-header').scrollToFixed({
+      limit: $('.subtotal').offset().top - $('.subtotal').height()
+    });
     return $('.pay-icon').on('click', function(e) {
       var x, y;
       x = e.clientX;

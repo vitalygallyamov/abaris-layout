@@ -68,7 +68,8 @@
   margin-top: 10px; }
 .abaris-form .css-label {
   background-image: url("../img/checkbox.png");
-  color: #717171; }
+  color: #717171;
+  margin-top: 8px; }
 .abaris-form a, .abaris-form a:visited {
   color: #296bb1; }
 .abaris-form .lock {

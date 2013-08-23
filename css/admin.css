@@ -9,9 +9,8 @@
   .admin-steps .step {
     width: 20%;
     float: left;
-    height: 100px; }
-    .admin-steps .step a {
-      text-decoration: underline; }
+    height: 100px;
+    text-decoration: underline; }
   .admin-steps .big {
     font-size: 53px;
     color: #717171;
@@ -36,6 +35,9 @@
   height: 23px;
   margin: 0 auto;
   display: block; }
+
+.un-check {
+  width: 0; }
 
 .grey-check {
   background: no-repeat 0 0 url("../img/cart_checks.png"); }

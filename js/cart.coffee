@@ -5,6 +5,10 @@ $ ->
 		icons:
 			down: "spinner-down"
 			up: "spinner-up"
+	# fixed scroll header
+	$('.catalog-grid-header').scrollToFixed
+		limit: $('.subtotal').offset().top - $('.subtotal').height()
+
 	$('.pay-icon').on 'click', (e) ->
 		x = e.clientX
 		y = e.clientY

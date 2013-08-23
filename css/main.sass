@@ -51,7 +51,6 @@ a.b-button-red
 
 .up-item
   float: left
-  margin-right: 5px
   line-height: 1
   border-right: 1px solid #dcdcdc
   a
@@ -65,7 +64,6 @@ a.b-button-red
     &:visited
       font-size: 10px
       color: #777
-      padding-top: -2px
       text-decoration: none
     &:hover .icon, &:active, &.active .icon
       background-position-y: -16px
@@ -209,11 +207,12 @@ a.b-button-red
     background: no-repeat center url('../img/bread_sep.gif')
 
 .search-form
-  float: right
-  border: 1px solid #dadada
-  border-radius: 20px
-  padding: 2px 10px
   margin-top: 10px
+  .input-wrap
+    float: right
+    border: 1px solid #dadada
+    border-radius: 20px
+    padding: 2px 10px
 
 .search-input
   height: 14px
@@ -394,7 +393,7 @@ a.b-button-red
   .desc
     padding: 15px 0 10px 5px
   .scroller
-    max-height: 400px
+    max-height: 350px
     max-width: 400px
   h3
     font-size: 14px
@@ -618,16 +617,6 @@ a, a:visited
   /* pager */
 
   .catalog-pager
-    // margin: 25px 0
-    // text-align: center
-    // color: $red
-    // font-size: 12px
-    // ul
-    //   display: inline-block
-    // li
-    //   display: inline-block
-    //   margin-right: 5px
-    //   height: 15px
     ul
       display: block
       margin: 0
@@ -643,26 +632,63 @@ a, a:visited
         line-height: 1
         padding: 5px
         @include border_radius(2px)
-    //   a
-    //     padding: 0
-    // a, a:visited
-    //   color: $grey
-    //   text-decoration: none
-    //   padding: 10px
-    //   background-color: #aaa
-    //   @include border_radius(5px)
-    //   color: #fff
-    // a:active
-    //   background-color: #ccc
-    //   color: $red
-    // .arrow
-    //   width: 8px
-    //   display: inline-block
-    //   // margin-bottom: -3px
-    // .left
-    //   background: no-repeat 0 0 url('../img/pager_arrows.gif')
-    // .right
-    //   background: no-repeat -8px 0 url('../img/pager_arrows.gif')
+  .user-panel
+    width: 100%
+    text-align: center
+  .up-item
+    float: none
+    display: inline-block
+  .no-link
+    float: none
+    width: 100%
+    text-align: right
+    border-bottom: 1px solid #ccc
+    i
+      float: right
+      margin-right: 10px
+  .breadcrumbs
+    float: none
+    padding: 0
+    margin: 0
+    display: inline-block
+    margin: 10px auto
+    .sep
+      display: none
+
+    li
+      font-size: 12px
+      float: left
+      text-align: center
+      color: #ff665d
+      margin-right: 0
+      padding-bottom: 0
+    a, .current
+      background-color: #f1f1f1
+      padding: 3px 7px
+      display: inline-block
+      @include border_radius(5px)
+      @include box_shadow(1px, 1px, 1px, 0, #ccc)
+      margin: 5px 5px 0 0
+    .current
+      border-left: none
+      background-color: #83aad2
+      color: #fff
+      margin: 5px 0 0 0
+  .search-form .input-wrap
+      float: none
+      display: inline-block
+  .align-center
+    text-align: center
+    //   &:visited
+    //     color: #717171
+    //     text-decoration: none
+    //   &.home
+    //     color: #000
+    // .sep
+    //   width: 6px
+    //   height: 11px
+    //   background: no-repeat center url('../img/bread_sep.gif')
+
 
 @media only screen and (max-width: 644px)
   .brends-block

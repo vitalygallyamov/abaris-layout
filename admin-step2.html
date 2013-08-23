@@ -75,8 +75,8 @@
             <!-- end header block-->
             <!-- begin breadcrumbs -->
             <div>
-                <div class="container grey-border">
-                    <ul class="breadcrumbs">
+                <div class="container align-center grey-border">
+                    <ul class="breadcrumbs clearfix">
                         <li><a class="home" href="/">Главная</a></li>
                         <li class="sep"></li>
                         <li><a href="/">Главная</a></li>
@@ -87,11 +87,13 @@
                         <li class="sep"></li>
                         <li><a href="/">Главная</a></li>
                         <li class="sep"></li>
-                        <li>Главная</li>
+                        <li class="current">Главная</li>
                     </ul>
                     <form class="search-form">
-                        <input class="search-input" type="search" name="search-text" placeholder="поиск..."/>
-                        <input class="search-button" type="submit" value=""/>
+                        <div class="input-wrap clearfix">
+                            <input class="search-input" type="search" name="search-text" placeholder="поиск..."/>
+                            <input class="search-button" type="submit" value=""/>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -127,7 +129,7 @@
                 <div class="text">Вы можете привязать один или несколько автомобилей к аккаунту <br> прямо сейчас или сделать это позже в личном кабинете.</div>
             </div>
             <!-- begin list-->
-            <div class="catalog-container">
+            <div class="catalog-container grid-items">
                 <div class="catalog-grid">
                     <div class="catalog-grid-header">
                         <div class="container">
@@ -177,10 +179,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="catalog-grid-row no-hover">
+                    <div class="catalog-grid-row">
                          <div class="container">
                             <div class="row-fluid">
-                                <div class="field span1"><div class="valign-text"><p><span class="check grey-check"></span></p></div></div>
+                                <div class="field span1"><div class="valign-text"><p><span class="check blue-check"></span></p></div></div>
                                 <div class="field span3">
                                     <div class="valign-text">
                                         <p>Hyndai</p>
@@ -334,6 +336,7 @@
         <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 
         <script src="js/main.js"></script>
+        <script src="js/admin.js"></script>
 
         <script>
             $(function(){

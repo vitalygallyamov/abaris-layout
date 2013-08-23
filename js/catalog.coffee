@@ -3,7 +3,7 @@ $ ->
 	if($('.model-desc').length > 0)
 		$.show_abaris_box '.model-desc', 
 			onUpdate: () ->
-				console.log @.wrap.css 'position', 'fixed'
+				@.wrap.css 'position', 'fixed'
 
 	if $('.scroller').length > 0
 		$('.scroller').baron
@@ -20,11 +20,6 @@ $ ->
 		modal.find('.auto-items').append item
 		$.fancybox.reposition()
 
-	$(".catalog-grid-row").hover(
-		() -> 
-			$(@).addClass 'active' if !$(@).hasClass('no-hover')
-		() -> $(this).removeClass 'active'
-	)
 	###$('.catalog-grid-row').each () ->
 		max_height = 0
 		$(@).find('.field').each ()->

@@ -17,7 +17,6 @@
 
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/form.css">
-        <link rel="stylesheet" href="css/abaris-modal.css">
 
         <!--[if lt IE 9]>
             <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
@@ -75,7 +74,7 @@
             <!-- begin breadcrumbs -->
             <div>
                 <div class="container">
-                    <ul class="breadcrumbs">
+                    <ul class="breadcrumbs align-center clearfix">
                         <li><a class="home" href="/">Главная</a></li>
                         <li class="sep"></li>
                         <li><a href="/">Главная</a></li>
@@ -86,11 +85,13 @@
                         <li class="sep"></li>
                         <li><a href="/">Главная</a></li>
                         <li class="sep"></li>
-                        <li>Главная</li>
+                        <li class="current">Главная</li>
                     </ul>
                     <form class="search-form">
-                        <input class="search-input" type="search" name="search-text" placeholder="поиск..."/>
-                        <input class="search-button" type="submit" value=""/>
+                        <div class="input-wrap clearfix">
+                            <input class="search-input" type="search" name="search-text" placeholder="поиск..."/>
+                            <input class="search-button" type="submit" value=""/>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -247,29 +248,31 @@
                             </div>
                         </div>
                     </div>
-                    <div class="auto-item">
-                        <div class="row-fluid">
-                            <div class="span4"><label>Марка</label></div>
-                            <div class="span8">
-                                <input class="text-input" type="text">
+                    <div class="auto-items">
+                        <div class="auto-item">
+                            <div class="row-fluid">
+                                <div class="span4"><label>Марка</label></div>
+                                <div class="span8">
+                                    <input class="text-input" type="text">
+                                </div>
                             </div>
-                        </div>
-                        <div class="row-fluid">
-                            <div class="span4"><label>Модель</label></div>
-                            <div class="span8">
-                                <input class="text-input" type="text">
+                            <div class="row-fluid">
+                                <div class="span4"><label>Модель</label></div>
+                                <div class="span8">
+                                    <input class="text-input" type="text">
+                                </div>
                             </div>
-                        </div>
-                        <div class="row-fluid">
-                            <div class="span4"><label>Год</label></div>
-                            <div class="span8">
-                                <input class="text-input" type="text">
+                            <div class="row-fluid">
+                                <div class="span4"><label>Год</label></div>
+                                <div class="span8">
+                                    <input class="text-input" type="text">
+                                </div>
                             </div>
-                        </div>
-                        <div class="row-fluid">
-                            <div class="span4"><label>VIN- номер</label></div>
-                            <div class="span8">
-                                <input class="text-input" type="text">
+                            <div class="row-fluid">
+                                <div class="span4"><label>VIN- номер</label></div>
+                                <div class="span8">
+                                    <input class="text-input" type="text">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -345,7 +348,6 @@
         <script src="js/vendor/fancybox/jquery.fancybox.js"></script>
 
         <script src="js/main.js"></script>
-        <script src="js/abaris-modal.js"></script>
         <script src="js/sign_up.js"></script>
     </body>
 </html>

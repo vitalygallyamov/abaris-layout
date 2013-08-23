@@ -10,7 +10,7 @@
         $(this).find('.un-check').removeClass('un-check').addClass('check');
       }
     });
-    return $.show_abaris_box = function(selector, options) {
+    $.show_abaris_box = function(selector, options) {
       if (options == null) {
         options = {};
       }
@@ -20,6 +20,13 @@
       });
       return $.fancybox.open($(selector), options);
     };
+    return $(".catalog-grid-row").hover(function() {
+      if (!$(this).hasClass('no-hover')) {
+        return $(this).addClass('active');
+      }
+    }, function() {
+      return $(this).removeClass('active');
+    });
   });
 
 }).call(this);

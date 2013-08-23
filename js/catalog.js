@@ -5,7 +5,7 @@
     if ($('.model-desc').length > 0) {
       $.show_abaris_box('.model-desc', {
         onUpdate: function() {
-          return console.log(this.wrap.css('position', 'fixed'));
+          return this.wrap.css('position', 'fixed');
         }
       });
     }
@@ -18,20 +18,13 @@
         barOnCls: 'baron'
       });
     }
-    $('.add-auto').on('click', function() {
+    return $('.add-auto').on('click', function() {
       var item, modal;
       modal = $(this).closest('.inline-modal');
       item = modal.find('.auto-item').eq(0).clone().addClass('clone-auto');
       item.find('input').val('');
       modal.find('.auto-items').append(item);
       return $.fancybox.reposition();
-    });
-    return $(".catalog-grid-row").hover(function() {
-      if (!$(this).hasClass('no-hover')) {
-        return $(this).addClass('active');
-      }
-    }, function() {
-      return $(this).removeClass('active');
     });
     /*$('.catalog-grid-row').each () ->
     		max_height = 0

@@ -5,6 +5,13 @@
     $('.cancel-signup').on('click', function() {
       return $.fancybox.close();
     });
+    $('.add-auto').on('click', function() {
+      var item, modal;
+      modal = $(this).closest('.inline-modal');
+      item = modal.find('.auto-item').eq(0).clone().addClass('clone-auto');
+      item.find('input').val('');
+      return modal.find('.auto-items').append(item);
+    });
     open_step1 = function() {
       return $.show_abaris_box('.signup-step1', {
         afterShow: function() {
@@ -38,6 +45,7 @@
     };
     open_step3 = function() {
       return $.show_abaris_box('.signup-step3', {
+        autoCenter: false,
         afterShow: function() {
           return $('.signup-step3').find('.login-submit').on('click', function() {
             return $.fancybox.close();

@@ -630,4 +630,8 @@ a, a:visited {
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   .abaris-modal .fancybox-close {
     background-image: url("../img/close_window@2x.png");
-    background-size: 21px 21px; } }
+    background-size: 21px 21px; }
+
+  .header-container .title {
+    background-image: url("../img/logo@2x.png");
+    background-size: 160px 46px; } }

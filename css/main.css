@@ -626,7 +626,9 @@ a, a:visited {
     float: none;
     width: 100%;
     text-align: right;
-    border-bottom: 1px solid #cccccc; }
+    border-bottom: 1px solid #cccccc;
+    padding: 10px 0;
+    border-right: none; }
     .no-link i {
       float: right;
       margin-right: 10px; }
@@ -661,11 +663,9 @@ a, a:visited {
       color: white;
       margin: 5px 0 0 0; }
 
-  .search-form {
-    text-align: center; }
-    .search-form .input-wrap {
-      float: none;
-      display: inline-block; }
+  .search-form .input-wrap {
+    float: none;
+    display: inline-block; }
 
   .align-center {
     text-align: center; } }
